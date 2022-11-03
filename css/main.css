@@ -1,12 +1,17 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Hahmlet');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
 
 html {
     background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Hahmlet', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: 1500px x 1000px;
+
 }
 
 ::selection {
@@ -15,22 +20,42 @@ html {
 }
 
 h1 {
+    -webkit-text-fill-color: rgb(32, 0, 90) ;
     font-weight: normal;
     margin: auto;
     background: #fff;
     line-height: 2.5em;
+
+}
+
+h1.page-header{
+    font-family: 'Kalam',serif;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align:center;
+    
 }
 
 main.wrapper {
     background-color: white;
     overflow: auto;
-}
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+ 
 
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
 
 h2,h3 {
+    -webkit-text-fill-color: rgb(32, 0, 90) ;
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
@@ -68,7 +93,7 @@ footer {
     }
     
     picture.profile img {
-        width: 50%;
+        width: 35%;
         float: left;
         margin-right: 2em;
     }
